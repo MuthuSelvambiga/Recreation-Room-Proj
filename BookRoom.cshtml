@@ -1,0 +1,71 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Booking Page";
+
+}
+
+<html>
+<head>
+    <div class="text-center">
+        <h1 class="display-4"> Room Booking</h1>
+    </div>
+
+
+    <h2>Check Room Availability</h2>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right"> FULL_NAME</label>
+                <div class="col-sm-9">
+                    <input type="text" name="FULL_NAME" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">GENDER</label>
+                <div class="col-sm-9">
+                    <input type="text" name="GENDER" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+             <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">BOOKING_SLOT</label>
+                <div class="col-sm-9">
+                    <input type="text" name="BOOKING_SLOT" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right">ROOM_ID</label>
+                <div class="col-sm-9">
+                    <input type="number" name="ROOM_ID" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+             <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right"> CHECK_IN_TIME</label>
+                <div class="col-sm-9">
+                    <input type="time" name="CHECK_IN_TIME" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right"> CHECK_OUT_TIME</label>
+                <div class="col-sm-9">
+                    <input type="time" name="CHECK_OUT_TIME" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+             <div class="form-group">
+                <label class="col-sm-3 control-label no-padding-right"> ADD_MEMBERS</label>
+                <div class="col-sm-9">
+                    <input type="number" name="ADD_MEMBERS" class="col-xs-10 col-sm-8" />
+                </div>
+            </div>
+             <div class="form-group">
+               <div class="col-sm-9">
+                    <input type="submit" name="Submit" class="btn btn-primary" />
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+﻿@model List<RoomInfo>
+@{
+    ViewData["Title"] = "Home Page";
+
+}
+
+<<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+
+<h2>Recreation Centers</h2>
+
+<table class="table table-bordered">ub
+    <thead>
+        <tr>
+            <th>ROOM_ID</th>
+            <th>ROOM_ADMIN</th>
+            <th>ROOM_LOCATION</th>
+            <th>ROOM_FACILITY</th>
+            <th>ROOM_MAXCOUNT</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ROOM_ID</td>
+                <td>@item.ROOM_ADMIN</td>
+                <td>@item.ROOM_LOCATION</td>
+                <td>@item.ROOM_FACILITY</td>
+                <td>@item.ROOM_MAXCOUNT</td>>
+            </tr>
+        }
+    </tbody>
+
+</table>>
+
+

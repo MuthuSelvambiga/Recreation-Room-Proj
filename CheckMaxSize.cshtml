@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Check Page";
+
+}
+
+<html>
+<head>
+    <div class="text-center">
+        <h1 class="display-4"> Check Room Availability</h1>
+    </div>
+</head>
+<body>
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>ROOM_ID</th>
+                <th>ROOM_CURRENTCOUNT</th>
+                <th>ROOM_ALLOWEDCOUNT</th>
+                <th>ROOM_STATUS</th>
+                <th>ROOM_CUR_EXISTINGGENDER</th>
+                <th>ROOM_CUR_ALLOWEDGENDER</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ROOM_ID</td>
+                    <td>@item.ROOM_CURRENTCOUNT</td>
+                    <td>@item.ROOM_ALLOWEDCOUNT</td>
+                    <td>@item.ROOM_STATUS</td>
+                    <td>@item.ROOM_CUR_EXISTINGGENDER</td>>
+                    <td>@item.ROOM_CUR_ALLOWEDGENDER</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</body>
+
+</html>
